@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.Kotlinpractice" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Kotlinpractice" parent="android:Theme.Material.Light.NoActionBar" >\
+<!--        기본적으로 스플래시 아이콘은 api level 12(S) 부터 적용 가능-->
+
+<!--        중앙 아이콘-->
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="S">@drawable/ic_app</item>
+
+<!--        배경색-->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="S">#DA3333</item>
+
+<!--        스플래시 지속 시간 api 33 부터 deprecated. 최대 1000을 권장-->
+        <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="S">3000</item>>
+
+<!--        중알 아이콘의 배경 색-->
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="S">#6970FF</item>
+
+<!--        스플랙시 화면 중앙 하단에 배치되는 브랜딩 이미지. 권장하지 않음-->
+        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="S">@drawable/ic_branding</item>
+
+<!--        이건 뭔지 모르겠음;;-->
+        <item name="android:windowSplashScreenBehavior" tools:targetApi="TIRAMISU">icon_preferred</item>
+    </style>
+
 </resources>
