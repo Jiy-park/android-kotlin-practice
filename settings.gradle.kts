@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "kotlin-practice"
 include(":app")
+include(":splash")
